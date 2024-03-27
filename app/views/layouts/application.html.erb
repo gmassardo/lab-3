@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Y</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_include_tag "application", "data-turbo-track": "reload", type: "module" %>
+
+    <style>
+      .footer {
+      position: absolute;
+      bottom: 0;
+      width: 100% ; 
+      background-color: rgb(52, 92, 51);
+    
+    }
+
+    .textos {
+      text-align: center; 
+      font-family: Georgia;
+      
+    }
+    </style>
+    
+  </head>
+
+  <body style= 'background-color: rgb(92, 153, 100)'>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Home</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/about">About </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact">Contact </a>
+        </li>
+        
+      </ul>
+      
+    </div>
+  </div>
+  </nav>
+
+  
+ 
+
+
+    <%= yield %>
+  </body>
+
+  <footer class="footer mt-auto py-3 bg-light">
+
+  <div class="container text">
+  <div class="row">
+    <div class="col-6 col-sm-4">© 2024 CopyRight Palta</div>
+    <div class="col-6 col-sm-4">Social Medias:</div>
+
+    <!-- Force next columns to break to new line at md breakpoint and up -->
+    <div class="w-100 d-none d-md-block"></div>
+
+    <div class="col-6 col-sm-4"></div>
+    <div class="col-6 col-sm-4"> Instagram: https://www.instagram.com/ </div>
+  </div>
+</div>
+
+  </div>
+  </footer>
+
+</html>

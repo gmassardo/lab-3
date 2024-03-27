@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset = “UTF-8>          
+        <title> Contact Page </title>
+        <div class=textos>
+            <br>
+            <br>
+            <h1> Contact Page </h1>
+        </div>
+
+        <script>
+            function thankYou() {
+                document.getElementById("thankYou").innerHTML = "Thank you for your message, we will contact you soon.";
+            }
+        </script>
+    </head>
+
+    <body>
+    <br>
+    <div class=textos>    
+        <label for = "Name"> Name:  </label>
+        <input type = "text" id="Name" placeholder="Name">
+     
+        <label for = "Email"> Email: </label>
+        <input type = "text" id="Email" placeholder="example@miuandes.cl">
+   
+        <label for = "Message"> Message: </label>
+        <input type = "text" id="Message" placeholder="...">
+        
+        <button onclick="thankYou()"> Enter</button>
+        <p id = "thankYou"></p>
+    </div>
+
+
+    </body>
+
+</html> 
